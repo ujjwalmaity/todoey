@@ -5,17 +5,13 @@ import 'package:todoey/screens/add_task_screen.dart';
 import 'package:todoey/widgets/tasks_list.dart';
 
 class TasksScreen extends StatelessWidget {
-  void addTaskCallback(String newTaskTitle) {
-    //tasks.add(Task(name: newTaskTitle));
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          showModalBottomSheet(context: context, builder: (context) => AddTaskScreen(addTaskCallback));
+          showModalBottomSheet(context: context, builder: (context) => AddTaskScreen());
         },
         child: Icon(Icons.add),
         backgroundColor: Colors.lightBlue,
