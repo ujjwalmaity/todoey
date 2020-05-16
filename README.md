@@ -9,6 +9,13 @@ The objective of this tutorial is to understand how to manage state in Flutter. 
 
 A todolist app to keep track of all your tasks.
 
+![Screenshot_1](images/Screenshot_1.png)
+![Screenshot_2](images/Screenshot_2.png)
+
+![Screenshot_3](images/Screenshot_3.png)
+![Screenshot_4](images/Screenshot_4.png)
+![Screenshot_5](images/Screenshot_5.png)
+
 ## What you will learn
 
 - Understand what is state and why we need to manage it.
