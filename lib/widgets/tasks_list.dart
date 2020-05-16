@@ -16,12 +16,14 @@ class _TasksListState extends State<TasksList> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: <Widget>[
-        TaskTile(taskTitle: task[0].name, isChecked: task[0].isDone),
-        TaskTile(taskTitle: task[1].name, isChecked: task[1].isDone),
-        TaskTile(taskTitle: task[2].name, isChecked: task[2].isDone),
-      ],
+    return ListView.builder(
+      itemBuilder: (context, index) {
+        return TaskTile(
+          taskTitle: task[index].name,
+          isChecked: task[index].isDone,
+        );
+      },
+      itemCount: task.length,
     );
   }
 }
